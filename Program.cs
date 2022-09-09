@@ -17,4 +17,8 @@ AddressBookUC obj = new AddressBookUC();
 //obj.DeleteContact(firstName1);
 //AddressBookUC.PrintAddressBook();
 
-obj.AddMultipleContact1();
+//obj.AddMultipleContact1();
+
+
+MultipleAddressBook multipleAddressBook = new MultipleAddressBook();
+multipleAddressBook.AddAddressBook();
