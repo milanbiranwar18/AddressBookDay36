@@ -57,6 +57,37 @@ namespace AddressBookDay36
             }
 
         }
+
+        public void EditContact(string firstName)
+        {
+            foreach (Contact person in People)
+            {
+                if (person.FirstName == firstName)
+                {
+                    Console.Write("Enter First Name: ");
+                    person.FirstName = Console.ReadLine();
+
+                    Console.Write("Enter Last Name: ");
+                    person.LastName = Console.ReadLine();
+
+                    Console.Write("Enter Address: ");
+                    person.Address = Console.ReadLine();
+
+                    Console.Write("Enter City: ");
+                    person.City = Console.ReadLine();
+
+                    Console.Write("Enter ZipCode: ");
+                    person.ZipCode = Console.ReadLine();
+
+                    Console.Write("Enter Phone Number: ");
+                    person.PhoneNumber = Console.ReadLine();
+
+                    Console.Write("Enter Email: ");
+                    person.Email = Console.ReadLine();
+
+
+                }
+            }
+        }
     }
-    
 }
